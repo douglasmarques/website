@@ -28,14 +28,23 @@ const HeroTitle = styled.h1`
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
 `
 
+const HeroSubTitle = styled.h2`
+  font-weight: 700;
+  font-size: 2  rem;
+  margin: 10px 60px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
+`
+
 class Hero extends React.Component {
   render() {
-    const { title, className } = this.props
+    const { title, subTitle, className } = this.props
 
     return (
       <HeroContainer className={className}>
         <TitleContainer>
           <HeroTitle>{title}</HeroTitle>
+          <HeroSubTitle>{subTitle}</HeroSubTitle>
         </TitleContainer>
       </HeroContainer>
     )

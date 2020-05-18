@@ -26,6 +26,7 @@ class Home extends React.Component {
     }
 
     const title = siteConfig.siteTitle
+    const subTitle = siteConfig.siteSubTitle
     const {keywords} = siteConfig
     return (
       <Layout location={this.props.location}>
@@ -37,6 +38,7 @@ class Home extends React.Component {
         <Hero
           heroImg={siteConfig.siteCover}
           title={title}
+          subTitle={subTitle}
         />
 
         <Wrapper className={this.props.className} >
